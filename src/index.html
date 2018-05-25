@@ -6,7 +6,38 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+
+      <form>
+        <div>
+            <label for="texto">Texto:</label><br>
+            <textarea id="texto" placeholder="Texto"></textarea><br>
+          </div>
+
+          <div>
+              <label for="offset">desplazamiento:</label><br>
+              <input type="text" id="offset"/><br>
+              
+          </div>
+
+          <div class="acciones">
+            <button type= "codificar" class="boton">codificar</button>
+            <button type= "decodificar" class="boton">decodificar</button>
+          </div>
+
+          <div>
+            <label for="resultado">Resultado</label><br>
+            <textarea id="resultado"></textarea><br>
+          </div>
+
+          <div class="limpiar">
+            <button type="limpiar">limpiar</button>
+          </div>
+          
+      </form>
+
+    </div>
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
