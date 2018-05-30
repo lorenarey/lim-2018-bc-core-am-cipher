@@ -8,10 +8,13 @@
   <body>
     <div id="root">
 
+      <h1>Cifrado Cesar</h1>
+      <br>
+
       <form>
         <div>
             <label for="texto">Texto:</label><br>
-            <textarea id="texto" placeholder="Texto"></textarea><br>
+            <textarea id="string" placeholder="Texto"></textarea><br>
           </div>
 
           <div>
@@ -19,14 +22,14 @@
               <input type="number" id="offset"/><br>
               
           </div>
-
+            <br>
           <div class="acciones">
-            <button type= "codificar" class="boton">codificar</button>
-            <button type= "decodificar" class="boton">decodificar</button>
+            <button id="botonCod"  class="boton">codificar</button>
+            <button id="botonDeco" class="boton">decodificar</button>
           </div>
 
           <div>
-            <p id="resultado">resultado</p><br>
+            <p id="solucion"></p><br>
           </div>
 
           <div class="limpiar">

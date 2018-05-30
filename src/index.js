@@ -1,5 +1,23 @@
+const button1 = document.getElementById('botonCod');
+const button2 = document.getElementById('botonDeco');
 
-const offsetStr = document.getElementById('offset').value+1;
-const offset= parseInt(offsetStr);
-const newOffset = str.charCodeAt(offset);
-const texto = document.getElementById('texto');
+
+button1.addEventListener('click', function(e) {
+    e.preventDefault();
+    const offsetStr = document.getElementById('offset').value;
+    const offset = parseInt(offsetStr);
+    const string = document.getElementById('string').value;
+    
+    cipher.encode(offset, string)
+});
+
+button2.addEventListener('click', function(e) {
+    e.preventDefault();
+    const offsetStr = document.getElementById('offset').value;
+    const offset = parseInt(offsetStr);
+    const string = document.getElementById('string').value;
+    
+    cipher.decode(offset, string)
+});
+
+
