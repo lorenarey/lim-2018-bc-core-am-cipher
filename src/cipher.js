@@ -6,12 +6,12 @@ window.cipher = {
     
     for(let i = 0; i< string.length; i++) {
        
-        const indice = string.charCodeAt(i);
-        const nuevaLetra = String.fromCharCode(indice + offset);
+        const indice = string.charCodeAt(i); //indice en codigo ASCII//
+        const nuevaLetra = String.fromCharCode(indice + offset); //obtengo la letra en la posicion dada//
 
        resultado = resultado + nuevaLetra
     }
-    console.log(resultado);
+    
     solucion.innerHTML= resultado
     
 
@@ -25,3 +25,5 @@ window.cipher = {
   }
 
 };
+
+
