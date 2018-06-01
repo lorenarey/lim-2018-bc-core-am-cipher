@@ -6,7 +6,7 @@ button1.addEventListener('click', function(e) {
     e.preventDefault();
     const offsetStr = document.getElementById('offset').value;
     const offset = parseInt(offsetStr);
-    const string = document.getElementById('string').value.toLocaleUpperCase();
+    const string = document.getElementById('string').value.toUpperCase();
     
     cipher.encode(offset, string)
 });
