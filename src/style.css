@@ -1,43 +1,74 @@
-#contenedor {
-    width: 800px;
-    height: 300px;
-    background: #D8D8D8;
+body {
+    background-color:#006699;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #999;
+    
+}
+.contenedor {
+    max-width: 400px;
+    background-color: #ffffff;
     margin: 0.5em auto;
-    padding: 0.5em;
-    float: left;
+    padding: 30px;
     text-align: center;
-    font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    box-shadow: 0 0 10px rgba(0,0,0, 0.2);
+   
 }
 
 header {
-    height: 20%;
-    background-color: #004080;
-    border-radius: 1em;
     margin: 1em;
-
-
+    padding: 10px;
+    color:#006699;
+    font-weight: bold;
 }
 
+.acciones {
+margin: 20px;
+}
 
-
-#string {
-  padding: 10px 10px;
-  width: 30%;
-  line-height: 30px;
+.string {
+  width:100% ;
+  padding: 10px;
+  height: 100px;
+  box-sizing: border-box;
   border-radius: 0.4rem;
   text-transform: uppercase;
+  margin-bottom: 30px;
+  border: solid #ccc 1px;
 }
 
-#offset {
+.boton {
+  border: 0px;
+  background-color: #006699;
+  padding: 15px 40px;
+  color: #ffffff
+}
+
+.label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.offset {
   padding: 5px 5px;
-  width: 8%;
+  width: 15%;
   line-height: 10px;
+  border: solid #ccc 1px;
+  border-radius: 0.4rem;
   
 }
 
 .caja-solucion {
-    background-color: #fff;
+    background-color: #ffffff;
     min-height: 100px;
-    border: solid #8c8c8c 1px;
+    border: solid #ccc 1px;
+    border-radius: 0.4rem;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    width:100% ;
+    padding: 10px;
+    height: 100px;
+
 }
+    
+

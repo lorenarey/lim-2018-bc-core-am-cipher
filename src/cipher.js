@@ -30,7 +30,21 @@ window.cipher = {
 
     const offsetNegativo = offset * -1;
     cipher.encode(offsetNegativo, string);
-  }
+  },
+
+  createCipherWithOffset: (offset, string) => {
+    return {
+      encode: () => {
+        return cipher.encode(offset, string)
+      },
+
+      decode: () => {
+        return cipher.decode(offset, string)
+
+      }
+    }
+  },
+
 };
 
 

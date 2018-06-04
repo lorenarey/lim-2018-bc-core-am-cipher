@@ -10,39 +10,37 @@
     <div id="root">
 
       
-      <div id="contenedor">
+      <div id="contenedor" class="contenedor">
 
-      <header>CIFRA TU MENSAJE</header>
+        <header>CIFRA TU MENSAJE</header>
 
-      <form>
+          <form>
         <div>
-            <label for="texto">Texto:</label><br>
-            <textarea id="string" placeholder="Texto"></textarea><br>
+            <label class="label" for="texto">Texto:</label>
+            <textarea id="string" class="string" placeholder="Escribe tu mensaje"></textarea>
           </div>
 
           <div>
-              <label for="offset">desplazamiento:</label><br>
-              <input type="number" id="offset"/><br>
+              <label class="label" for="offset">desplazamiento:</label>
+              <input type="number" id="offset" class="offset"/>
               
           </div>
-            <br>
           <div class="acciones">
-            <button id="botonCod"  class="boton">codificar</button>
-            <button id="botonDeco" class="boton">decodificar</button>
+            <button id="botonCod"  class="boton">Codificar</button>
+            <button id="botonDeco" class="boton">Decodificar</button>
           </div>
 
           <div class="caja-solucion">
             <p id="solucion"></p>
-            <br>
           </div>
 
           <div class="limpiar">
-            <button type="limpiar">limpiar</button>
+            <button type="reset" class="boton" >Limpiar</button>
           </div>
           
-      </form>
+          </form>
 
-    </div>
+      </div>
 
     </div>
 
