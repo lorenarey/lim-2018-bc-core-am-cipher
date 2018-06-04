@@ -1,5 +1,7 @@
 const button1 = document.getElementById('botonCod');
 const button2 = document.getElementById('botonDeco');
+const solucion = document.getElementById('solucion');
+
 
 
 button1.addEventListener('click', function(e) {

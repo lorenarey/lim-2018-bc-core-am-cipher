@@ -1,8 +1,7 @@
 window.cipher = {
-  // ... 
+  
   encode: (offset, string) => {
     let resultado = ''; 
-    const solucion = document.getElementById('solucion');
     
     for(let i = 0; i< string.length; i++) {
       const indice = string.charCodeAt(i);
@@ -46,5 +45,6 @@ window.cipher = {
   },
 
 };
+
 
 
