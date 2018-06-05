@@ -1,6 +1,6 @@
 const button1 = document.getElementById('botonCod');
 const button2 = document.getElementById('botonDeco');
-
+const solucion = document.getElementById('solucion');
 
 button1.addEventListener('click', function(e) {
     e.preventDefault();
@@ -8,7 +8,8 @@ button1.addEventListener('click', function(e) {
     const offset = parseInt(offsetStr);
     const string = document.getElementById('string').value.toUpperCase();
     
-    cipher.encode(offset, string)
+    const resultado = cipher.encode(offset, string);
+    solucion.innerHTML = resultado;
 });
 
 button2.addEventListener('click', function(e) {
@@ -17,6 +18,6 @@ button2.addEventListener('click', function(e) {
     const offset = parseInt(offsetStr);
     const string = document.getElementById('string').value.toUpperCase();
     
-    cipher.decode(offset, string)
+    const resultado = cipher.decode(offset, string);
+    solucion.innerHTML = resultado;
 });
-
